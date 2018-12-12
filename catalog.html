@@ -47,8 +47,8 @@
 		</ul>
 	</nav>
 </header>
-
-<main class="container">
+<main>
+<div class="container">
   <ul class="breadcrumbs">
     <li><a href="index.html"><img src="#" alt="Домик"></a></li>
     <li><a href="#">Каталог</a></li>
@@ -56,12 +56,43 @@
     <li><a href="#">Перфораторы</a></li>
   </ul>
   <h2>ПЕРФОРАТОРЫ</h2>
-  <section class="filter">
-    <h3 class="visually-hidden"></h3>
-  
-    
-    
-  </section>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="filter"> <-- Не знаю как сделать-->
+      <span class="filter-sale">Фильтр:</span>
+      <p>цена</p>
+      <div>шкала цен</div>
+      <div>0</div>
+      <div>30000</div>  <------------------>
+    </div>
+    <div class="mark-filter">
+      <h3>Производители</h3>
+         <label>
+            <input type="checkbox" name="BOSCH" id="filter-select">
+         </label>
+         <label>
+            <input type="checkbox" name="Интерскол" id="filter-select">
+         </label>
+         <label>
+            <input type="checkbox" name="Makita" id="filter-select">
+         </label>
+         <label>
+            <input type="checkbox" name="Dewalt" id="filter-select">
+         </label>
+         <label>
+          <input type="checkbox" name="Hitachi" id="filter-select">
+         </label>
+    </div>
+    <div class="mark-filter">
+      <label>
+        <input type="radio" name="question-one" value="a"> Аккумуляторные.
+      </label>
+      <label class="mark-filter">
+        <input type="radio" name="question-one" value="a"> Сетевые.
+      </label>
+    </div>
+    <input type="submit" value="Показать">
+  </form>
+  </div>
   <div class="main-catalog">
     <div class="settings">
       <span>СОРТИРОВКА</span>
