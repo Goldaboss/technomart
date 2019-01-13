@@ -7,48 +7,55 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <div class="header-top">
-    <div class="main-header-logo">
-      <h1><a href="index.html">Техномарт</a></h1>
+    <div class="container">
+      <div class="container-top">
+        <div class="main-header-logo">
+          <a href="index.html">Техномарт</a>
+        </div>
+        <ul class="top-menu">
+          <li class="search"><a href="#">Поиск:</a></li>
+          <li><a class="count" href="#">Закладки: 0</a></li>
+          <li><a class="count" href="#">Корзина: 0</a></li>
+          <li><a class="order" href="#">Оформить заказ</a></li>
+        </ul>
+      </div>
     </div>
-    <ul>
-      <li><a href="#">Поиск</a></li>
-      <li><a href="#">Закладки</a></li>
-      <li><a href="#">Корзина</a></li>
-      <li><a href="#">Оформить заказ</a></li>
-    </ul>
   </div>
   
   <div class="header-middle">
-    <h1>Интернет-магазин строительных материалов и инструментов для ремонта
-    </h1>
-    <a href="tel:+78125550555"> +7 (812) 555-05-55</a>
-    <span>г. Санкт-Петербург, ул. Б. Конюшенная, д.</span>
-    <ul class="logged-out">
-      <li>
-        <a class="login-link" href="#">Вход</a>
-      </li>
-      <li>
-        <a class="login-link" href="#">Регистрация</a>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="shop-info">
+        <p class="descr">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
+        </p>
+        <div class="contacts">
+          <a class="phone" href="tel:+78125550555"> +7 (812) 555-05-55</a><br>
+          <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8.</span>
+        </div>
+        <div class="logged-out">
+            <a class="login-link" href="#">Войти</a>
+            <a class="registration login-link" href="#">Регистрация</a>
+        </div>
+      </div>
       <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спеупредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+          <ul class="site-navigation">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
       </nav>
+    </div>
   </div>
 </header>
 
@@ -58,35 +65,35 @@
     <ul class="main-list">
       <li class="main-item">
         <h3>Материалы</h3>
-          <a href="#" class="main-item-btn">На любой вкус</a>
+        <a href="#" class="main-item-btn">На любой вкус</a>
       </li>
       <li class="main-item">
         <h3>Инструмент</h3>
-          <a href="#" class="main-item-btn">На все случаис</a>
+        <a href="#" class="main-item-btn">На все случаис</a>
       </li>
       <li class="main-item">
         <h3>Техника</h3>
-          <a href="#" class="main-item-btn">Для стройки</a>
+        <a href="#" class="main-item-btn">Для стройки</a>
       </li>
       <li class="main-item">
         <h3>Скидки 50%</h3>
-          <a href="#" class="main-item-btn">На 350 товаров</a>
+        <a href="#" class="main-item-btn">На 350 товаров</a>
       </li>
       <li class="main-item">
         <h3>Доставка</h3>
-          <a href="#" class="main-item-btn">Бесплатно</a>
+        <a href="#" class="main-item-btn">Бесплатно</a>
       </li>
       <li class="slider">
-          <figure class="slider-item">
-            <img src="#" alt="Товары">
-             <button class="button-slider" type="button">
-                <img class="slider-next" src="#" alt="Вперед">
-             </button>
-             <button class="button-slider" type="button">
-               <img class="slider-back" src="#" alt="Назад">
-             </button>
-            <a class=main-item-btn" href="catalog.html">Открыть каталог</a>
-          </figure>
+        <figure class="slider-item">
+          <img src="#" alt="Товары">
+          <button class="button-slider" type="button">
+            <img class="slider-next" src="#" alt="Вперед">
+          </button>
+          <button class="button-slider" type="button">
+            <img class="slider-back" src="#" alt="Назад">
+          </button>
+          <a class=main-item-btn" href="catalog.html">Открыть каталог</a>
+        </figure>
       </li>
     </ul>
   </section>
@@ -285,58 +292,58 @@
   </div>
 </footer>
 
-  <section class="modal modal-login">
-    <h2>Личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label>Логин
-            <input class="login-icon-user" type="text" name="login" >
-          </label>
-        </p>
-        <p>
-          <label>Пароль
-            <input class="password-icon-user" type="password" name="password">
-          </label>
-        </p>
-        <p class="login-password-info">
-          <label>
-             <input type="checkbox" name="remember" checked>Запомнить меня!
-          </label>
-        </p>
-        <button class="button" type="submit">Войти</button>
-      </form>
-        <button class="modal-close" type="button">Закрыть</button>
-  </section>
+<section class="modal modal-login">
+  <h2>Личный кабинет</h2>
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label>Логин
+        <input class="login-icon-user" type="text" name="login">
+      </label>
+    </p>
+    <p>
+      <label>Пароль
+        <input class="password-icon-user" type="password" name="password">
+      </label>
+    </p>
+    <p class="login-password-info">
+      <label>
+        <input type="checkbox" name="remember" checked>Запомнить меня!
+      </label>
+    </p>
+    <button class="button" type="submit">Войти</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
 
-  <section class="modal modal-map">
-    <h2 class="visually-hidden">Aдрес офиса</h2>
-      <p>
-        <img src="img/map.jpg" width="300" height="158" alt="Адрес офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург ">
-      </p>
-      <button class="modal-close" type="button">Закрыть</button>
-  </section>
+<section class="modal modal-map">
+  <h2 class="visually-hidden">Aдрес офиса</h2>
+  <p>
+    <img src="img/map.jpg" width="300" height="158" alt="Адрес офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург ">
+  </p>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
 
-  <section class="modal modal-mail">
-    <h2>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</h2>
-      <form class="user-quastion" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label>Ваше имя:
-            <input class="name" type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-        </p>
-        <p>
-          <label>Ващ e-mail:
-             <input class="mail" type="text" name="email" placeholder="email@example.com">
-          </label>
-        </p>
-        <p>
-          <label>Текст письма:
-            <input class="text" type="text" name="text" placeholder="В свободной форме">
-          </label>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-  </section>
+<section class="modal modal-mail">
+  <h2>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</h2>
+  <form class="user-quastion" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label>Ваше имя:
+        <input class="name" type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+    </p>
+    <p>
+      <label>Ващ e-mail:
+        <input class="mail" type="text" name="email" placeholder="email@example.com">
+      </label>
+    </p>
+    <p>
+      <label>Текст письма:
+        <input class="text" type="text" name="text" placeholder="В свободной форме">
+      </label>
+    </p>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
 
 </body>
 </html>
