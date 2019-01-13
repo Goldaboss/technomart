@@ -57,7 +57,7 @@ p {
   width: 220px;
   text-transform: uppercase;
   text-align: center;
-  box-shadow: 0 5px 0 0 #b52933;
+  box-shadow:  5px 0 0 #b52933;
 }
 .top-menu {
   display: flex;
