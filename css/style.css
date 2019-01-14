@@ -201,6 +201,98 @@ header {
 
 
 
-.main-list {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*fooooooooooooooootttttttttttttttttteeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrr*/
+footer ul{
   list-style: none;
+}
+footer a {
+  color: #f3f7f9;
+}
+.footer-top {
+  background: #32425c;
+  color: #f3f7f9;
+}
+.footer-bottom {
+  background: #293449;
+  color: #f3f7f9;
+}
+
+.main-footer-logo {
+  font-size: 30px;
+  line-height: 62px;
+  color: #f3f7f9;
+  background-color: #ee3643;
+  max-width: 220px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+.container-footer-top {
+  display: flex;
+}
+.shop-info-footer {
+  width: 390px;
+  flex-shrink: 0;
+  font-size: 18px;
+}
+.shop-info-footer p{
+  font-size: 18px;
+  line-height: 24px;
+  margin: 35px 0;
+}
+
+.container-footer-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.footer-navigation-bottom {
+  padding-left: 25px;
 }
