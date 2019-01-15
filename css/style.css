@@ -259,40 +259,79 @@ footer a {
 
 .main-footer-logo {
   font-size: 30px;
-  line-height: 62px;
+  line-height: 63px;
   color: #f3f7f9;
   background-color: #ee3643;
-  max-width: 220px;
+  width: 220px;
   text-transform: uppercase;
   text-align: center;
   box-shadow: 0 5px 0 0 #b52933;
+  margin-right: 170px;
 }
 .container-footer-top {
   display: flex;
 }
-.shop-info-footer {
-  width: 390px;
-  flex-shrink: 0;
-  font-size: 18px;
-}
-.shop-info-footer p{
-  font-size: 18px;
-  line-height: 24px;
-  margin: 35px 0;
-}
 
-.container-footer-nav {
+.footer-top-nav {
   display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 .footer-navigation {
   display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
+  flex-grow: 1;
   font-size: 18px;
+  line-height: 24px;
+  justify-content: space-between;
+  margin: 0;
+  align-items: flex-end;
+}
+.footer-bot-nav {
+  display: flex;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 33px 0 35px 0;
+}
+.footer-naf-bot {
+  display: flex;
+  flex-grow: 1;
+  font-size: 18px;
+  justify-content: space-between;
+  margin: 0;
+  align-items: flex-start;
+  margin-left: 95px;
+
+}
+.footer-naf-bot li a{
+  color: #ffd180;
+}
+.container-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px 0;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 133px;
+  margin-left: 55px;
 }
 
-.footer-navigation-bottom {
-  padding-left: 25px;
+.social-button {
+  width: 10px;
+  margin: 10px;
+  flex-grow: 1;
+}
+.create {
+  display: flex;
+  width: 310px;
+  padding: 15px 15px 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.create a{
+  color: #ffd180;
 }
