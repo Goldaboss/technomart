@@ -73,11 +73,60 @@ p {
   width: 150px;
 }
 .top-menu .count {
-  min-width: 160px;
+  position: relative;
+  padding-left: 50px;
+  width: 160px;
 }
 .top-menu .search {
   flex-grow: 1;
 }
+.top-menu .favorite {
+  position: relative;
+  padding-left: 35px;
+  width: 150px;
+}
+.favorite:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  width: 20px;
+  height: 20px;
+  background-position: -55px -48px;
+  left: 25px;
+  top: 10px;
+  opacity: 0.2;
+}
+.top-menu .basket {
+  padding-left: 30px;
+}
+.basket:before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/sprite.png);
+  width: 20px;
+  height: 20px;
+  background-position: -8px -48px;
+  left: 25px;
+  top: 10px;
+  opacity: 0.2;
+}
+.top-menu a:active {
+  color: #6a7180;
+
+}
+.top-menu a:hover:before {
+  opacity: 1;
+}
+.top-menu a:active:before {
+  opacity: 0.2;
+}
+
+
+
+
+
+
+
 
 .header-middle {
   background-color: #f2f6f8;
