@@ -199,9 +199,84 @@ header {
 .main-navigation a {
   color: #ffffff;
 }
-
-
+.logged-in {
+  width: 34%;
+}
+.login-menu {
+  display: flex;
+  position: relative;
+}
+.login-menu a{
+  font-size: 16px;
+  line-height: 20px;
+  color: #32425c;
+  text-decoration:underline;
+}
+.login-menu a:hover {
+  color: #ee3643;
+}
+.login-menu a:active {
+  color: #c5c5c5;
+}
+.login-name {
+  position: relative;
+  width: 320px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 35px;
+  padding: 6px 0 5px 0px;
+  margin-bottom: 8px;
+  color: #000000;
+  background-color: white;
+}
+.login-name:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-position: -202px -48px;
+  width: 20px;
+  height: 20px;
+  left: 34px;
+  top: 12px;
+  opacity: 0.2;
+}
+.login-name:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-position: -204px 3px;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 12px;
+  opacity: 0.2;
+}
+.header-middle .logged-in a:hover:before,
+.header-middle .logged-in a:hover:after {
+  opacity: 1;
+}
+.header-middle .logged-in a:active:after,
+.header-middle .logged-in a:active:before {
+  opacity: 0.2;
+}
+.header-middle .logged-in a:active {
+  color: #c5c5c5;
+}
+.my-orders {
+  padding-left: 38px;
+  padding-right: 5px;
+}
+.login-menu span.point {
+  padding-left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #212a3a;
+  margin: 7px 12px 0 10px;
+}
 .main-navigation {
+  padding-right: 4px;
+  padding-left: 1px;
   width: 100%;
   background-color: #32425c;
   box-shadow: 0 5px 0 0 #293449;
@@ -220,7 +295,7 @@ header {
 }
 .top-menu li:last-child a:hover,
 .top-menu li:last-child a:focus {
- background-color: #63a63e;
+ background-color: #7bd14c;
 }
 .top-menu li:last-child a:active {
   background-color: #518534;
@@ -249,7 +324,7 @@ header {
   line-height: 21px;
   border: 3px solid #ffffff;
   color: #ee3643;
-  padding: 10px 45px 10px 70px;
+  padding: 13px 45px 8px 71px;
   margin-bottom: 3px;
 }
 .contacts .phone:before {
@@ -259,7 +334,7 @@ header {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  left: 15px;
+  left: 10px;
   background-position: -201px -203px;
   top: 50%;
   margin-top: -10px;
