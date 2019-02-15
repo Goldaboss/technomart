@@ -78,8 +78,49 @@ p {
   width: 160px;
 }
 .top-menu .search {
+  position: relative;
   flex-grow: 1;
+  text-align: -webkit-left;
 }
+input[type=search] {
+  font-size: 17px;
+  line-height: 42px;
+  font-weight: 400;
+  color: white;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  width: 100%;
+  padding: 0 0 0 49px;
+  border: none;
+  background-color: #293449;
+
+}
+input[type="search"]::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.search-label {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  z-index: 20;
+  width: 20px;
+  height: 20px;
+  background: url(../img/icon-search.svg) no-repeat;
+  cursor: pointer;
+  opacity: 0.5;
+}
+input[type=search]:hover {
+  background-color: #212a3a;
+}
+input[type=search]:focus {
+  background-color: #ffffff;
+  color: black;
+}
+
+input[type=search]+.search-label:hover {
+  opacity: 1;
+}
+
 .top-menu .favorite {
   position: relative;
   padding-left: 35px;
@@ -112,7 +153,6 @@ p {
 }
 .top-menu a:active {
   color: #6a7180;
-
 }
 .top-menu a:hover:before {
   opacity: 1;
@@ -688,9 +728,11 @@ hr {
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #ee3643;
+  background: url("../img/red-button.svg") no-repeat;
+  width: 100%;
   margin-bottom: 6px;
   padding: 0 20px;
+  background-position: center;
 }
 .page-list {
   display: inline-block;
@@ -707,7 +749,7 @@ hr {
 .page-list-next {
   display: inline-block;
   padding: 0 31px;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 1px solid #c5c5c5;
   line-height: 36px;
 }
@@ -717,10 +759,23 @@ hr {
 }
 .page-list:visited {
   background: #ee3643;
-
 }
-
-
+.info-product {
+  background-color: #f2f6f8;
+  padding-top: 23px;
+  margin-top: 60px;
+}
+.info-product h4 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.info-product p {
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  padding-bottom: 38px;
+}
 
 
   /*fooooooooooooooootttttttttttttttttteeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrr*/
