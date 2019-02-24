@@ -811,15 +811,13 @@ hr {
   display: flex;
 }
 .footer-navigation a:hover,
-.footer-bot-nav a:hover,
-.footer-navigation a:focus,
-.footer-bot-nav a:focus {
+.footer-bot-nav a:hover {
   text-decoration: underline;
 }
 .footer-navigation a:active,
 .footer-bot-nav a:active {
-
   text-decoration: none;
+  opacity: 0.5;
 }
 .footer-navigation {
   display: flex;
