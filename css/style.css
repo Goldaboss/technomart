@@ -445,7 +445,7 @@ h2 {
 .main-list-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
 }
 .main-item {
   position: relative;
@@ -549,12 +549,26 @@ h2 {
   overflow: hidden;
 }
 .slider-slides {
-  width: 200%;
+  width: 300%;
 }
 .slider-item img {
   float: left;
 }
-.slider-controls label {
+.slider-controls-item>div.point {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 218px;
+  left: 295px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: #ee3643;
+  border: 2px solid white;
+}
+
+.slider-controls :first-of-type {
   position: absolute;
   left: 26px;
   top: 112px;
@@ -564,7 +578,7 @@ h2 {
   background: url("../img/icon-left.svg") 0 0 no-repeat;
   z-index: 1;
 }
-.slider-controls label + label {
+.slider-controls :last-of-type {
   position: absolute;
   left: 579px;
   top: 112px;
@@ -595,6 +609,13 @@ h2 {
 #btn-2:checked ~ .slider-slides {
   transform: translate(-620px);
 }
+#btn-1:checked ~ .slider-controls-item div.point {
+  transform: translate(0);
+}
+#btn-2:checked ~ .slider-controls-item div.point {
+  transform: translate(20px);
+}
+
 .slider-item a {
   position: absolute;
   display: block;
@@ -699,7 +720,7 @@ h2 {
 }
 .main-bottom {
   display: flex;
-  padding-bottom: 85px;
+  padding-bottom: 87px;
   justify-content: space-between;
 }
 h5 {
