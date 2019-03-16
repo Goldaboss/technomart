@@ -701,8 +701,8 @@ h2 {
 
 .service {
   background-color: #f4f8f9;
-  padding-bottom: 70px;
-  margin-bottom: 67px;
+  padding-bottom: 28px;
+  margin-bottom: 54px;
 }
 .service h4 {
   font-family:  "Cuprum", Arial, sans-serif;
@@ -710,7 +710,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   display: block;
-  padding: 64px 0 24px 0;
+  padding: 66px 0 24px 0;
   margin: 0;
 }
 .service p{
@@ -735,12 +735,12 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
 }
-.delivery-features div {
-  width: 300px;
+.delivery-features {
+  position: relative;
+  padding: 34px 0 0 0;
+  margin-bottom: 53px;
 }
-.delivery-features div:first-of-type {
-  padding: 34px 60px 0 0 ;
-}
+
 .main-service-btn {
   font-size: 21px;
   line-height: 30px;
@@ -749,39 +749,98 @@ h5 {
 }
 .service-select {
   position: relative;
+  width: 240px;
 }
-.main-service-btn:after {
+.service-select input[type=radio] {
+
+}
+.service-select:after {
   content: '';
   position: absolute;
   width: 10px;
   height: 280px;
-  right: 60px;
-  top: -11px;
+  right: 0;
+  top: -42px;
   background: url(../img/shadow.png) 20px 20px;
 }
 .main-service-btn li {
+  display: block;
   padding: 13px 0 16px 22px;
   background: #32425c;
-  border-bottom: 1px solid #4d637b;
-}
-.main-service-btn li a {
-  color: white;
-}
-.main-service-btn li:hover {
-  background-color: #ffffff;
-}
-.main-service-btn li:hover a{
-  color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
+.main-service-btn li:hover {
+  background-color: #293449;
+}
 .delivery-features div h5 {
   font-size: 36px;
   color: #32425c;
   line-height: 36px;
-  margin: 54px 0px 25px 0;
+  margin: 20px 0 25px 0;
+}
+.service-info {
+  position: relative;
+  width: 700px;
+  padding-left: 81px;
 }
 
+.delivery {
+  display: none;
+  background: url("../img/truck.png")  150px 25px no-repeat;
+  height: 100%;
+}
+.guarantee {
+  display: none;
+  height: 100%;
+  background: url("../img/100.png")  150px 25px no-repeat;
+}
+.credit {
+  display: none;
+  height: 100%;
+  background: url("../img/credit.png")  150px 0px no-repeat;
+}
 
+#btn-3:checked ~ .main-service-btn :nth-of-type(1) li {
+  background: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: #32425c;
+}
+#btn-3:checked ~ .delivery {
+  display: block;
+}
+#btn-4:checked ~ .guarantee {
+  display: block;
+}
+#btn-4:checked ~ .main-service-btn :nth-of-type(2) li {
+  background: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: #32425c;
+}
+#btn-5:checked ~ .credit {
+  display: block;
+}
+#btn-5:checked ~ .main-service-btn :nth-of-type(3) li {
+  background: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: #32425c;
+}
+.credit a {
+  display: block;
+  width: 195px;
+  line-height: 38px;
+  text-align: center;
+  background: #ff5357;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Cuprum", Arial, sans-serif;
+  border-radius: 5px;
+  border: 0px solid black;
+}
 .main-bottom p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
