@@ -101,17 +101,6 @@ input[type=search] {
 input[type="search"]::-webkit-input-placeholder {
   color: #ffffff;
 }
-.search-label {
-  position: absolute;
-  top: 12px;
-  left: 17px;
-  z-index: 20;
-  width: 20px;
-  height: 20px;
-  background: url(../img/icon-search.svg) no-repeat;
-  cursor: pointer;
-  opacity: 0.5;
-}
 input[type=search]:hover {
   background-color: #212a3a;
   background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2217%22%20height%3D%2217%22%20viewBox%3D%220%200%2017%2017%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M17%2015.586l-3.542-3.542A7.465%207.465%200%200%200%2015%207.5%207.5%207.5%200%201%200%207.5%2015c1.71%200%203.282-.579%204.544-1.542L15.586%2017%2017%2015.586zM2%207.5C2%204.467%204.467%202%207.5%202%2010.532%202%2013%204.467%2013%207.5c0%203.032-2.468%205.5-5.5%205.5A5.506%205.506%200%200%201%202%207.5z%22%2F%3E%3C%2Fsvg%3E%0A);
@@ -670,7 +659,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 64px 0;
+  margin: 20px 0 66px 0;
 }
 .mark-name {
   display: flex;
@@ -709,7 +698,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
   display: block;
-  padding: 66px 0 24px 0;
+  padding: 63px 0 24px 0;
   margin: 0;
 }
 .service p{
@@ -736,7 +725,7 @@ h5 {
 }
 .delivery-features {
   position: relative;
-  padding: 34px 0 0 0;
+  padding: 33px 0 0 0;
   margin-bottom: 53px;
 }
 
@@ -783,18 +772,18 @@ h5 {
 
 .delivery {
   display: none;
-  background: url("../img/truck.png")  150px 25px no-repeat;
+  background: url("../img/truck.png")  100% 0 no-repeat;
   height: 200%;
 }
 .guarantee {
   display: none;
   height: 200%;
-  background: url("../img/100.png")  231px 0 no-repeat;
+  background: url("../img/100.png")  100% 0 no-repeat;
 }
 .credit {
   display: none;
   height: 200%;
-  background: url("../img/credit.png")  149px 0 no-repeat;
+  background: url("../img/credit.png")  100% 0 no-repeat;
 }
 #btn-3:checked ~ .service-info .delivery,
 #btn-4:checked ~ .service-info .guarantee,
@@ -1130,46 +1119,46 @@ hr {
   left: 41px;
   top: 44px;
   height: 38px;
+  background-color: #63a63e;
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Ccircle%20fill%3D%22%2392c178%22%20cx%3D%224.5%22%20cy%3D%2213.5%22%20r%3D%221.5%22%2F%3E%3Ccircle%20fill%3D%22%2392c178%22%20cx%3D%2212.5%22%20cy%3D%2213.5%22%20r%3D%221.5%22%2F%3E%3Cpath%20fill%3D%22%2392c178%22%20d%3D%22M15%202H4.07l-.422-2H0v2h2.031l1.985%209H15V9H9.441L15%206.951z%22%2F%3E%3C%2Fsvg%3E%0A);
+  background-position: 13px 11px;
+  background-repeat: no-repeat;
+  border: none;
   border-bottom: 2px solid #367315;
-  background: #63a63e;
   border-radius: 3px;
   color: #ffffff;
   padding-left: 5px;
 }
-.button-buy:before {
-  content: "";
-  position: absolute;
-  background: url("../img/icon-cart.svg") no-repeat;
-  width: 16px;
-  height: 16px;
-  left: 13px;
-  top: 11px;
-  opacity: 0.5;
-}
 .button-buy:hover {
   background-color: #5fbb2d;
+  background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Ccircle%20fill%3D%22%23ffffff%22%20cx%3D%224.5%22%20cy%3D%2213.5%22%20r%3D%221.5%22%2F%3E%3Ccircle%20fill%3D%22%23ffffff%22%20cx%3D%2212.5%22%20cy%3D%2213.5%22%20r%3D%221.5%22%2F%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M15%202H4.07l-.422-2H0v2h2.031l1.985%209H15V9H9.441L15%206.951z%22%2F%3E%3C%2Fsvg%3E%0A);
+  cursor: pointer;
 }
 .button-buy:active {
   background-color: #518534;
-}
-.button-buy:hover:before,
-.button-buy:active:before {
-  opacity: 1;
+  outline: none;
 }
 .button-favor {
   left: 41px;
   top: 90px;
   height: 38px;
+  background-color: white;
   border: 3px solid #63a63e;
   border-radius: 3px;
   color: #32425c;
 }
 .button-favor:hover {
   border-color: #32425c;
+  cursor: pointer;
 }
 .button-favor:active {
   border-color: #c1c6ce;
   color: #d0d2d6;
+  outline: none;
+}
+.button-buy:focus,
+.button-favor:focus {
+  outline: none;
 }
 .name-model {
   font-family: "PT Sans","Arial",sans-serif;
@@ -1182,7 +1171,6 @@ hr {
 .price-old {
   display: flex;
   font-family: "PT Sans","Arial",sans-serif;
-  height: 38px;
   justify-content: center;
   align-items: center;
   font-size: 17px;
@@ -1194,20 +1182,21 @@ hr {
 }
 .price-new {
   display: flex;
-  font-family: "PT Sans","Arial",sans-serif;
   height: 38px;
+  font-family: "PT Sans","Arial",sans-serif;
   justify-content: center;
   align-items: center;
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  background: url("../img/red-button.svg") no-repeat;
-  width: 100%;
-  margin-bottom: 6px;
-  padding: 0 20px;
-  background-position: center;
-
+  background-color: #ee3643;
+  background-image:
+    linear-gradient(225deg, white 12.5%, transparent 12.5%),
+    linear-gradient(315deg, white 12.5%, transparent 12.5%);
+  padding: 0 7px 0 0;
+  margin: 0 22px 6px 32px;
+  border-radius: 3px;
 }
 .page-list {
   display: inline-block;
