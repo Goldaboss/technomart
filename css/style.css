@@ -555,7 +555,6 @@ h2 {
   background-color: #ee3643;
   border: 2px solid white;
 }
-
 .slider-controls :first-of-type {
   position: absolute;
   left: 26px;
@@ -618,6 +617,13 @@ h2 {
   text-transform: uppercase;
   font-size: 14px;
 }
+.slider-item a:hover,
+.slider-item a:focus {
+  background-color: #ca2c37;
+}
+.slider-item a:active {
+  background-color: #ba2732;
+}
 .main-middle-model>div,
 .main-middle-firm>div {
   display: flex;
@@ -635,7 +641,6 @@ h2 {
   text-transform: uppercase;
   font-weight:  100;
   margin: 0;
-
 }
 .main-middle-model>div>a,
 .main-middle-firm>div>a {
@@ -1373,4 +1378,69 @@ hr {
 .create a:active {
   color: #b52933;
   text-decoration: none;
+}
+.modal-mail {
+  position: fixed;
+  width: 620px;
+  background-color: white;
+  border-top: 8px solid #ff5357;
+  margin: auto auto;
+  padding: 46px 80px 38px;
+  background-image: linear-gradient( transparent 73%, #f4f4f4 73%);
+  margin-bottom: 100px;
+  box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.3);
+}
+.modal-mail form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.modal-mail p {
+  width: 220px;
+  margin: 0;
+}
+.modal-mail label {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.modal-mail p:last-of-type {
+  width: 100%;
+}
+.modal-mail input {
+  width: 100%;
+  height: 36px;
+  font-family: "PT Sans","Arial",sans-serif;
+  padding-left: 13px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  margin-bottom: 21px;
+  outline: none;
+}
+.modal-mail textarea {
+  width: 100%;
+  padding: 10px 0 0 15px;
+  margin-bottom: 70px;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  outline: none;
+  resize: none;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+.modal-mail button {
+  width: 100%;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 12px auto;
+  border: none;
+  border-radius: 3px;
 }
