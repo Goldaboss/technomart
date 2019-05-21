@@ -278,10 +278,10 @@
     <section class="contact">
       <h5>Контакты</h5>
       <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-      <a href="#">
+      <a href="#" class="js-map">
         <img src="img/map.jpg" width="300" height="158" alt="Карта">
       </a>
-      <div class="">
+      <div class="js-mail">
         <a href="mailto:@technomart.ru" class="button-main-footer-mail">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
       </div>
     </section>
@@ -334,12 +334,9 @@
   </div>
 </footer>
 
-<section class="modal modal-map">
-  <h2 class="visually-hidden">Aдрес офиса</h2>
-  <p>
-    <img src="img/map.jpg" width="300" height="158" alt="Адрес офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург ">
-  </p>
-  <button class="modal-close" type="button">Закрыть</button>
+<section class="modal modal-map" style="display: block">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCf1uXoJ" width="540" height="400" frameborder="1" allowfullscreen="true"></iframe>
+  <button class="exit-modal" type="button"></button>
 </section>
 
 <section class="modal modal-mail">
@@ -361,6 +358,43 @@
   </form>
 </section>
 
+<div class="modal modal-buy">
+  <button class="exit-modal" type="button"></button>
+  <p>Товар добавлен в корзину!</p>
+  <button class="created" type="button"><a href="#">оформить заказ</a></button>
+  <button class="return" type="button"><a href="catalog.html">продолжить покупки</a></button>
+</div>
+
+<script>
+  var bigMap = document.querySelector(".js-map");
+  
+    bigMap.addEventListener("click",function (evt) {
+    bigMap.classList.add("modal-show");
+    
+  });
+  var buyItem = document.querySelector(".button-buy");
+  var itemAdded = document.querySelector(".modal-buy");
+  var writeUs = document.querySelector(".js-mail");
+  var sendMail = document.querySelector(".modal-mail");
+  var closeModal = document.querySelector(".exit-modal");
+  writeUs.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    sendMail.classList.add("modal-show");
+  });
+  buyItem.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    itemAdded.classList.add("modal-show");
+  });
+  closeModal.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    itemAdded.classList.remove("modal-show");
+  });
+  closeModal.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    sendMail.classList.remove("modal-show");
+  });
+  
+</script>
 </body>
 </html>
 

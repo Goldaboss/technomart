@@ -333,5 +333,12 @@
   <button class="return" type="button"><a href="catalog.html">продолжить покупки</a></button>
 </div>
 
+<script>
+  var buyItem = document.querySelector(".button-buy");
+  var itemAdded = document.querySelector(".modal-buy");
+  buyItem.addEventListener("click",function (evt) {
+    itemAdded.classList.add("modal-show");
+  });
+</script>
 </body>
 </html>

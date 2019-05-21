@@ -900,7 +900,7 @@ h5 {
   font-size: 17px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: bold;
   height:  177px;
 }
 .main-catalog-sorting {
@@ -920,19 +920,20 @@ h5 {
 .settings-item {
   display: flex;
   margin: 0 15px 0 21px;
+  flex-grow: 0;
 }
 
 .settings-item li:nth-child(1) {
-  padding-right: 140px;
+  padding-right: 130px;
 }
 .settings-item li:nth-child(2) {
-  padding-right: 70px;
+  padding-right: 62px;
 }
 .settings-item li:nth-child(3) {
-  padding-right: 65px;
+  padding-right: 60px;
 }
 .settings-item li:nth-child(4) {
-  padding-right: 47px;
+  padding-right: 40px;
 }
 .settings-item li:nth-child(5) {
   padding-right: 20px;
@@ -1313,10 +1314,8 @@ hr {
   flex-grow: 1;
   font-size: 18px;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 0 0 95px;
   align-items: flex-start;
-  margin-left: 95px;
-
 }
 .footer-naf-bot li a{
   color: #ffd180;
@@ -1390,7 +1389,6 @@ hr {
   padding: 33px 80px 38px;
   background-image: linear-gradient( transparent 73%, #f4f4f4 73%);
   box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.3);
-  z-index: 3;
 }
 .modal-mail form {
   display: flex;
@@ -1447,7 +1445,8 @@ hr {
   border-radius: 3px;
 }
 .modal-mail>.exit-modal,
-.modal-buy>.exit-modal {
+.modal-buy>.exit-modal,
+.modal-map>.exit-modal {
   border: none;
   padding: 0;
 }
@@ -1482,7 +1481,11 @@ hr {
   background-color: #ba2732;
   outline: none;
 }
-
+.modal-map {
+  position: fixed;
+  bottom: 10%;
+  left: 33%;
+}
 .modal-buy {
   position: fixed;
   top: 10%;
@@ -1494,7 +1497,6 @@ hr {
   padding: 51px 80px 38px;
   background-image: linear-gradient( transparent 57%, #f4f4f4 57%);
   box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.3);
-  z-index: 3;
 }
 .modal-buy p {
   font-size: 30px;
@@ -1511,7 +1513,7 @@ hr {
   padding: 10px;
   background-color: #ee3643;
   border: none;
-
+  outline: none;
 }
 .modal-buy .created a {
   color: #ffffff;
@@ -1544,4 +1546,23 @@ hr {
   border-top-width: 0;
   border-right-width: 0;
   transform: rotate(-45deg);
+}
+.modal {
+  display: none;
+}
+.modal-show {
+  display: block;
+  z-index: 10;
+  animation-name: popap;
+  animation-duration: 3s;
+
+}
+@keyframes popap {
+  0% {transform: translateY(-500px)}
+  35% {transform: translateY(20px)}
+  55% {transform: translateY(-20px)}
+  75% {transform: scale(1.5) rotate(-10deg);}
+  90% {transform: translateY(-10px)}
+  95% {transform: translateY(0px)}
+  100% {transform: translateY(10px)}
 }
