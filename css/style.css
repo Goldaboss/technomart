@@ -1087,7 +1087,7 @@ hr {
   font-size: 14px;
   line-height: 27px;
   text-transform: lowercase;
-  overflow: hidden;
+  top: 9px;
 }
 
 .catalog-list-item:hover,
