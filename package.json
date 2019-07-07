@@ -13,6 +13,7 @@
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
     "gulp-imagemin": "^6.0.0",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2"
   },
   "scripts": {

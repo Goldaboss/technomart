@@ -3,7 +3,8 @@ const gulp = require('gulp'),
   browserSync = require('browser-sync'), // Подключаем Browser Sync
   autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
   babel = require('gulp-babel'),
-  imagemin = require('gulp-imagemin');
+  imagemin = require('gulp-imagemin'),
+  rigger = require('gulp-rigger');
 
 
 gulp.task('styles', function(){ // Создаем таск "sass"
@@ -16,8 +17,10 @@ gulp.task('styles', function(){ // Создаем таск "sass"
 
 gulp.task('html', function() {
   return gulp.src('app/**/*.html')
+    .pipe(rigger())
     .pipe(gulp.dest('docs'))
     .pipe(browserSync.reload({ stream: true }))
+
 });
 
 gulp.task('scripts', function() {
