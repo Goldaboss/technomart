@@ -24,7 +24,8 @@
             <li class="search">
               <form action="#" method="post">
                <input type="search" id="search" name="search" placeholder="Поиск:">
-              </form></li>
+              </form>
+            </li>
             <li><a class=" favorite" href="#">Закладки: 0</a></li>
             <li><a class="count basket filled" href="#">Корзина: 10</a></li>
             <li><a class="order buy" href="#">Оформить заказ</a></li>
@@ -122,12 +123,12 @@
             <ul>
               <li class="filter-option">
                 <label>
-                  <input type="radio" name="question-one" value="a">Аккумуляторные.
+                  <input type="radio" name="question-one" value="a">Аккумуляторные
                 </label>
               </li>
               <li class="filter-option">
                 <label>
-                  <input type="radio" name="question-one" value="b">Сетевые.
+                  <input type="radio" name="question-one" value="b">Сетевые
                 </label>
               </li>
             </ul>
@@ -137,15 +138,14 @@
       </aside>
     
       <section class="main-catalog-sorting">
-        <!-- <h3 class="visually-hidden">Товары</h3> -->
         <div class="catalog-sorting">
           <ul class="settings-item">
             <li><span>сортировка:</span></li>
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по функционалу</a></li>
-            <li><img src="./img/icon-up-dir.svg"></li>
-            <li><img src="./img/icon-down-dir.svg" ></li>
+            <li><img src="./img/icon-up-dir.svg" alt="по возростанию"></li>
+            <li><img src="./img/icon-down-dir.svg" alt="по убыванию"></li>
           </ul>
         </div>
         <div class="catalog">
@@ -334,8 +334,8 @@
 </div>
 
 <script>
-  var buyItem = document.querySelector(".button-buy");
-  var itemAdded = document.querySelector(".modal-buy");
+  let buyItem = document.querySelector(".button-buy");
+  let itemAdded = document.querySelector(".modal-buy");
   buyItem.addEventListener("click",function (evt) {
     itemAdded.classList.add("modal-show");
   });
